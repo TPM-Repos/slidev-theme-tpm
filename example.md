@@ -8,7 +8,7 @@ Presentation slides for developers
 
 <br>
 
-<img src="https://d9hhrg4mnvzow.cloudfront.net/www.driveworksworld.com/9bc6d104-driveworks-world-logo-white-copy_10d80ch000000000000028.png" alt="DriveWorks World" class="h-42 mx-auto">
+<img src="/driveworks-world.png" alt="DriveWorks World" class="h-42 mx-auto">
 
 ---
 
