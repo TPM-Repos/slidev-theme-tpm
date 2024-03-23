@@ -1,5 +1,5 @@
 {
-  "name": "slidev-theme-tpm-theme",
+  "name": "slidev-theme-tpm",
   "version": "1.0.0",
   "type": "module",
   "keywords": [
@@ -13,9 +13,7 @@
   "scripts": {
     "build": "slidev build example.md",
     "dev": "slidev example.md --open",
-    "export-notes": "slidev export-notes example.md",
-    "export-pdf": "slidev export example.md",
-    "export": "npm run export-notes && npm run export-pdf"
+    "export-pdf": "slidev export example.md"
   },
   "dependencies": {
     "@slidev/types": "^0.48.3",
