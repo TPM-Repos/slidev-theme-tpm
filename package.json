@@ -1,6 +1,6 @@
 {
   "name": "slidev-theme-tpm-theme",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "keywords": [
     "slidev-theme",
@@ -13,8 +13,9 @@
   "scripts": {
     "build": "slidev build example.md",
     "dev": "slidev example.md --open",
-    "export": "slidev export example.md",
-    "screenshot": "slidev export example.md --format png"
+    "export-notes": "slidev export-notes example.md",
+    "export-pdf": "slidev export example.md",
+    "export": "npm run export-notes && npm run export-pdf"
   },
   "dependencies": {
     "@slidev/types": "^0.48.3",
@@ -25,9 +26,8 @@
     "@slidev/cli": "^0.48.3",
     "playwright-chromium": "^1.42.1"
   },
-  "//": "Learn more: https://sli.dev/themes/write-a-theme.html",
   "slidev": {
-    "colorSchema": "both",
+    "colorSchema": "light",
     "highlighter": "all",
     "defaults": {
       "fonts": {
