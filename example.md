@@ -1,14 +1,17 @@
 ---
 theme: ./
+layout: cover
 ---
 
-# Slidev Theme Starter
+<!-- 
+Layouts available:
+center, cover, default, end, fact, full, image-left, image-right, image, iframe-left, iframe-right, iframe, intro, none, quote, section, statement, two-cols, two-cols-header
+ -->
 
-Presentation slides for developers
 
-<br>
+# TPM Slidev Theme
 
-<img src="/driveworks-world.png" alt="DriveWorks World" class="h-42 mx-auto">
+Presentation slides from MarkDown
 
 ---
 
@@ -24,10 +27,9 @@ Slidev is a slides maker and presenter designed for developers, consist of the f
 - 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
 - 🛠 **Hackable** - anything possible on a webpage
 
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+<!-- 
+You can have speaker notes by adding a comment at the nd of your slide or by editing them in the built in editor.
+ -->
 
 ---
 
@@ -77,40 +79,6 @@ class: "text-center"
 
 [Documentations](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
 
----
-layout: cover
----
-
-# Presentation title
-
-Presentation subtitle
-
----
-
-# Slide Title
-
-Slide Subtitle
-
-* Slide bullet text
-  * Slide bullet text
-  * Slide bullet text
-* Slide bullet text
-* Slide bullet text
-
----
-layout: image-right
-image: https://source.unsplash.com/collection/94734566/1920x1080
----
-
-# Slide Title
-
-Colons can be used to align columns.
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
 
 ---
 layout: section
@@ -159,3 +127,30 @@ function updateUser(id: number, update: Partial<User>) {
   saveUser(id, newUser)
 }
 ```
+
+---
+layout: two-cols
+---
+
+# Left
+
+This shows on the left
+
+::right::
+
+# Right
+
+This shows on the right
+
+---
+layout: two-cols-header
+---
+This spans both
+::left::
+# Left
+This shows on the left
+::right::
+# Right
+This shows on the right
+::bottom::
+This shows at the bottom, aligned to the end (bottom) of the grid
