@@ -1,3 +1,22 @@
+/* layouts available:
+
+center
+cover
+default
+end
+fact
+full
+iframe, iframe-left, iframe-right
+image, image-left, image-right
+intro
+none
+quote
+section
+statement
+two-cols, two-cols-header
+
+*/
+
 :root {
   --tpm-blue: #00AEEF;
   --tpm-grey: #888888;
@@ -95,6 +114,11 @@ div:has( >.slidev-layout)::after {
   background-size: contain;
   background-repeat: no-repeat;
   z-index: -1;
+}
+
+/* no logo for cover */
+div:has(.slidev-layout.cover)::after {
+  display: none;
 }
 
 .slidev-layout.cover,
