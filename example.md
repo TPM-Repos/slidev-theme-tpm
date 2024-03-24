@@ -107,6 +107,24 @@ layout: quote
 Attribution
 
 ---
+layout: image
+image: https://source.unsplash.com/collection/94734566/1920x1080
+---
+
+# Page with image
+
+---
+layout: image
+image: https://source.unsplash.com/collection/94734566/1920x1080
+height: 50%
+---
+
+# Page with smaller image
+
+You can specify the height and width of the image
+
+
+---
 layout: image-left
 image: https://source.unsplash.com/collection/94734566/1920x1080
 ---

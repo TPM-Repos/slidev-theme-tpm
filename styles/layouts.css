@@ -87,6 +87,11 @@ two-cols, two-cols-header
   h6:not(.opacity-100) {
     @apply opacity-40;
   }
+
+  ol li {
+    @apply mt-2;
+  }
+
 }
 
 /* make a blue box in the top right of the screen */
@@ -103,13 +108,10 @@ div:has( >.slidev-layout)::before {
 
 /* make the logo appear in the bottom left of the screen */
 div:has( >.slidev-layout)::after {
-  margin: 12px;
+  @apply absolute bottom-0 left-0 w-full h-10 m-3;
   content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: var(--logo-width);
-  height: var(--logo-height);
+  /* width: var(--logo-width); */
+  /* height: var(--logo-height); */
   background-image: var(--logo-image);
   background-size: contain;
   background-repeat: no-repeat;
@@ -168,6 +170,14 @@ div:has(.slidev-layout.cover)::after {
 .slidev-layout.section {
   h1 {
     @apply text-6xl font-500 leading-20;
+  }
+}
+
+.slidev-layout.image {
+  .prop-image {
+    @apply bottom-0 left-30 right-10 absolute;
+    max-height: 80%;
+    height: revert-layer;
   }
 }
 
